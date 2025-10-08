@@ -1,0 +1,676 @@
+:root {
+    --font-size: 25px;
+    --black-color: rgb(0, 0, 0);
+    --white-color: rgb(255, 255, 255);
+    --bong:0px 3px 2px rgba(99, 93, 93, 0.219);
+    --sp:#e8eded;
+    --input-thanh: rgb(166, 178, 36);
+    --chuoi:rgb(246, 239, 240);
+}
+*{
+    box-sizing: border-box !important;
+    margin: 0 ;
+    padding: 0;
+}
+
+
+/* ------------------------------header ---------------------*/
+.top_nav_tt{
+    line-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--input-thanh);
+    color: var(--white-color);
+    padding: 0px 1% 0px 1%;
+}
+.login__us a{
+    color: white ;
+}
+ul li{
+    display: block;
+}
+ul li a{
+    color: black;
+}
+a{
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+nav{
+    box-shadow: var(--bong);
+}
+
+.navbar {
+    z-index: 4;
+}
+
+.navbar i {
+    font-size: var(--font-size);
+}
+
+.love,.shop__cart{
+    position: relative;
+}
+.sl{
+    top: -10px;
+    right: -5px;
+    background-color: yellow;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    border-radius: 10px;
+    text-align: center;
+}
+.table-xuly{
+    background-color: #d5e9fd!important;
+}
+.table th{
+    color: black !important;
+}
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: var(--input-thanh);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+.Search_timkiem{
+    background-color: var(--chuoi) !important;
+}
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.overlay-content form {
+    width: 50% !important;
+}
+
+.overlay a {
+    font-size: 34px;
+    padding: 8px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.carousel-caption,
+.navbar ul li a {
+    font-weight: 600;
+    color: var(--black-color);
+}
+.image_banner{
+    filter: brightness(70%) !important;
+}
+.carousel-control-prev span,
+.carousel-control-next span {
+    border-radius: 40px;
+    padding: 30px;
+}
+.nav__right{
+    border: 2px  dashed white;
+    background-color: var(--input-thanh);
+    border-radius: 40px;
+}
+.nav__right span i {
+    color:rgb(199, 198, 198);
+}
+.nav__right span:hover{
+    color: white !important;
+}
+.nav__right,
+.navbar-collapse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 20%;
+}
+.collapse a:hover{
+    background-color: var(--chuoi);
+    border-radius: 40px;
+    color: white !important;
+    box-shadow: 0px 0px 10px rgb(216, 216, 216);
+}
+.them_thongbao{
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px #0000001f;
+    padding: 5px 10px 5px 10px;
+    background-color: white;
+    color: black !important;
+}
+
+.dropdown-300px a{
+    color: black;
+}
+.dropdown-300px img{
+    height: 50px;
+    width: 50px;
+    border-radius:50% ;
+}
+.media-nav{
+    border-radius: 40px;
+    padding: 10px;
+    background-color: #eeeeee;
+}
+/* ------------------------------main HOME---------------------*/
+
+.danhmuc__sp{
+    background-color: var(--sp);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.363);
+}
+.danhmuc__sanpham--sl input{
+    border-radius: 15px;
+    border:none;
+    background-color: var(--chuoi);
+    color: var(--white-color);
+    width: 60%;
+    line-height: 30px;
+}
+.sp__main{
+    display: flex;
+    justify-content: center;
+}
+.main__one{
+    padding: 0px;
+}
+.main__two{
+    display: flex;
+    justify-content: center;
+}
+.row {
+    box-sizing: border-box !important;
+    margin: 0;
+    padding: 0;
+}
+.gia_duocgiam{
+    color: red;
+}
+.card__tt-image{
+    position: relative;
+}
+.card__tt:hover .sp__hover{
+    transform: translate(0);
+    opacity: 1;
+}
+.card__tt:hover .card__tt-image img{
+    transition: all 0.3s;
+    transform: scale(1.1,1.1);
+}
+.card:hover{
+    border: 1px solid var(--input-thanh);
+    background-color: #F8F1F1;
+}
+.ten_sp{
+    font-size: 18px;
+}
+.sale_sp{
+    font-weight: 600;
+    background-color: red;
+    color:white;
+    border-radius: 5px;
+}
+.new{
+    position: absolute;
+    font-weight: 600;
+    background-color: var(--chuoi);
+    color:white;
+    border-radius: 5px;
+    top: 5px;
+    right: 5px;
+}
+.icon a{
+    font-size: 20px;
+    color: var(--white-color);
+}
+.icon li {
+    padding: 0px 2px ;
+}
+.new,.sale_sp span{
+    padding: 1px 7px;
+}
+.sp__hover{
+    position: absolute;
+    transform: translateY(0px);
+    width: 100%;
+    line-height: 100px;
+    bottom: 0;
+    opacity: 0;
+    transition: all linear 0.2s;
+    background-color: rgba(0, 0, 0, 0.507);
+
+}
+.card__tt-image{
+    overflow: hidden;
+}
+.sp__hover--button{
+    width: 100%;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+}
+.sp__hover--button strong:hover{
+    background-color: brown;
+}
+.sp__hover--button strong{
+    display: flex;
+    color: var(--white-color);
+    justify-content: center;
+    width: 90%;
+    padding: 5px;
+    background-color: var(--input-thanh);
+    border-radius: 40px;
+}
+.icon ul{
+    margin: 0;
+}
+.icon ul li{
+    text-align: center;
+}
+.icon ul li a{
+    background-color: var(--chuoi);
+    padding: 10px;
+    border-radius: 10px;
+}
+.sp__hover--button strong a{
+    color: var(--white-color);
+}
+.view__all{
+    border-radius : 40px;
+    width: 150px;
+    line-height: 50px;
+    text-align: center;
+    background-color: rgb(190, 42, 42);
+}
+.view__all span{
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+.view__all:hover{
+    transition: 0.2s;
+    background-color:  rgb(255, 255, 255);
+    border: 1px solid black;
+}
+.view__all:hover span{
+    color: black;
+}
+.btn-primary{
+    background-color: var(--input-thanh);
+}
+.tt_gia_tien{
+    color: var(--input-thanh);
+    font-weight: 600;
+}
+.gach_sp{
+    border-left: 1px solid black !important;
+}
+.san_pham_moi .sp__hover a, .san_pham_moi .icon a{
+    font-size: 10px ;
+}
+/* ------------------------------main contact---------------------*/
+.lienhe_border{
+    border-radius: 0px 0px 40px 40px;
+    box-shadow: 0px 0px 15px rgba(129, 128, 128, 0.507);
+}
+/* ------------------------------Card---------------------*/
+
+.list {
+    overflow-y: visible;
+    height: auto !important;
+}
+
+.list_card{
+    width: 100%;
+    
+}
+
+.list_like_name,.list_card th{
+    background-color: whitesmoke;
+}
+.list_card_name{
+    text-align: center;
+    height: 40px;
+    background-color: #C4C4C4;
+    border-bottom: 2px solid red;
+}
+.list_card_item{
+    text-align: center;
+    height: 40px;
+    border-bottom: 1px solid #C4C4C4;
+}
+.list_card_item img{
+    padding: 10px 0 10px 0;
+    width: 100px;
+}
+
+.button__cart_gh{
+    margin-top: 20px;
+    margin-left: 70%;
+}
+.button__cart_gh button{
+    width: 150px;
+    border-radius: 40px;
+    background-color:brown !important;
+    color: white;
+    height: 40px;
+    margin-bottom: 10px;
+    border: none;
+}
+.button__cart_gh .button_one{
+    background-color:var(--input-thanh) !important;
+
+}
+
+.dat_hang_2{
+    margin-bottom: 10px;
+}
+.don{
+    width: 100%;
+}
+.don input{
+    margin: 12px 0 12px 0;
+}
+.dat_hang_3{
+    margin-top: 30px;
+    width: 150px;
+    border: none;
+    border-radius: 40px;
+    height: 50px;
+    color: white;
+    background-color: var(--input-thanh);
+}
+.box_main_cart_sp{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
+}
+
+/* ------------------------------like ---------------------*/
+
+.list_like_table{
+    width: 100%;
+}
+.list_like_name{
+    text-align: center;
+    height: 40px;
+}
+.list_like_item{
+    text-align: center;
+    height: 80px;
+    border-bottom: 1px solid #C4C4C4;
+}
+.list_like_item button{
+    border: none;
+    height: 40px;
+    width: 70%;
+    border-radius: 30px;
+    background-color: var(--chuoi);
+    color:rgb(102, 101, 101);
+}
+
+.list_like_table .image img{
+    width: 100px;
+    padding: 10px 0 10px 0;
+}
+/* ------------------------------main chi tiet html---------------------*/
+.add_to_card{
+    background-color: #4FB68D;
+    width: 150px;
+    height: 50px;
+    border-radius: 40px;
+}
+.tieude-main{
+    background-color: var(--input-thanh);
+    border-radius: 40px 40px 0px 0px;
+}
+.media-body{
+    color: white;
+    border-radius: 20px ;
+    color: black;
+}
+.media {
+    background-color: #ebebeb60;
+    border-radius: 0px 0px 40px 40px;
+}
+.gui_bl{
+    background-color: var(--input-thanh);
+    color: white;
+}
+
+.img-magnifier-container {
+    position:relative;
+}
+  
+.img-magnifier-glass {
+    position: absolute;
+    border: 1px solid rgba(0, 0, 0, 0.589);
+    border-radius: 50%;
+    cursor: none;
+    /*Set the size of the magnifier glass:*/
+    width: 100px;
+    height: 100px;
+}
+
+/* ------------------------------main login---------------------*/
+
+.form__login{
+    padding: 2%;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.473);
+    border-radius: 10px;
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.466);
+}
+.form__login_button{
+    color: rgb(238, 200, 200);
+}
+.button-user-fb,.button-user-left{
+    border-radius: 40px 0px 0px 40px;
+}
+.button-user-gg,.button-user-right{
+    border-radius: 0px 40px 40px 0px;
+}
+.button-user-fb,.button-user-gg,.button-user-left,.button-user-right{
+    text-align: center;
+    background-color: var(--chuoi);
+    line-height: 50px;
+    width: 200px;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(253, 253, 253) !important;
+}
+.button-user-left a,.button-user-right a{
+    color: rgb(116, 113, 113);
+}
+.gach{
+    border-left: 1px solid rgb(255, 255, 255) ;
+}
+.check{
+    font-weight: 600;
+}
+.dang_nhap_dk{
+    line-height: 50px;
+    border-radius: 40px;
+    border: none;
+    font-weight: 600;
+    background-color: var(--input-thanh);
+    color: white;
+}
+.grid-column{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 10px;
+}
+.nhap_input_login{
+    border: none;
+    height: 100% !important;
+    width: 100% ;
+}
+.input__form__icon{
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    border-radius: 40px;
+    height: 50px;
+}
+.input__form__icon i{
+    padding: 0px 10px 0px 5px;
+    z-index: 2;
+    font-size: 20px;
+}
+.quen_mk{
+    line-height: 50px;
+    width: 250px;
+    font-weight: 600;
+    border: none;
+    border-radius: 40px;
+    color: rgb(80, 79, 79);
+}
+.button-user-fb{
+    background-color: #3B5998;
+}
+.button-user-gg{
+    background-color: #E14B33;
+}
+/* ------------------------------main thong tin main doi mk ---------------------*/
+#preview img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+/* ------------------------------main lọc---------------------*/
+
+.loc_sp{
+    width: 100%;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.473);
+    border-radius: 0px 0px 40px 40px;
+}
+.loc_sp .nhap_input_login{
+    display: flex;
+    align-items: center;
+}
+option{
+    background-color: var(--input-thanh);
+    color: white;
+}
+select{
+    border: none;
+    width: 100%;
+}
+/* ------------------------------footer ---------------------*/
+
+footer{
+    background-color: var(--input-thanh);
+}
+footer a{
+    color: var(--white-color);
+}
+footer i{
+    color: var(--white-color);
+}
+footer form input{
+    width: 60%;
+    border-radius: 20px 0px 0px 20px !important;
+}
+footer form button{
+    width: 40%;
+    background-color: #253237 !important;
+    border-radius: 0px 20px 20px 0px !important;
+}
+.navbar-brand__end img{
+    width: 40%;
+}
+.text-uppercase{
+    padding: 2%;
+    border-bottom: 1px solid black !important;
+}
+footer span,footer h6{
+    color: var(--white-color);
+}
+#myBtn{
+    color: var(--chuoi);
+    font-size: 50px;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+}
+/*--------------------------new-------------------------------*/
+.new_font h4{
+    font-size: 15px;
+}
+.new_font a{
+    font-size: 13px;
+}
+.news .font_new{
+    color: #E14B33;
+}
+.news .font_new a{
+    color: black;
+}
+/* Fix hiển thị bảng giỏ hàng */
+.list_card {
+    width: 100%;
+    border-collapse: collapse;
+    display: table !important;
+}
+
+.list_card tr {
+    display: table-row !important;
+}
+
+.list_card td,
+.list_card th {
+    display: table-cell !important;
+}
+
+.tong_tatca {
+    display: table-row !important;
+}
+
+@media screen and (max-width:900px){
+    .nav__right{
+        display: flex;
+        flex-direction: column;
+    }
+    .commment_so{
+        display: grid !important;
+        grid-template-columns: 1fr;
+    }
+    .sp__hover--button strong a{
+        font-size: 10px;
+    }
+    .list_like,.list{
+        overflow: scroll;
+    }
+    .list_like_table,.list_card{
+        width: 1200px;
+    }
+    .tieude-main{
+        width: 100% !important;
+    }
+    .add_to_card{
+        margin-top: 10px;
+    }
+    .sp__hover{
+        padding: 0;
+    }
+    .sp__hover--button{
+        margin-left: 5px;
+    }
+}
+
+
